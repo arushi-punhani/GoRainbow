@@ -2,5 +2,5 @@
 
 # to be updated
 
-- [] usage
-- [] documentation.md
+- [ ] usage
+- [ ] documentation.md
