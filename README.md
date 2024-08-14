@@ -1,7 +1,13 @@
-# gorainbow
+# GORainbow
 
-# to be updated
+## - Usage :
+``` gorainbow <bash-command> ```
 
-- [ ] add articles
-- [ ] usage
-- [ ] documentation.md
+## - Installation :
+```
+git clone git@github.com:Pro696969/GoRainbow.git
+cd GoRainbow
+go build
+go install  
+```
+
