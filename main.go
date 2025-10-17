@@ -42,6 +42,16 @@ func color_printer(output []rune) {
 		r, g, b := rbg(i)
 		fmt.Printf("\033[38;2;%d;%d;%dm%c\033[0m", r, g, b, output[i])
 	}
+	for i := 0; i < len(output); i++ {
+		r, g, b := rainbow(i)
+		fmt.Printf("\033[38;2;%d;%d;%dm%c\033[0m", r, g, b, output[i])
+	}
+	for i := 0; i < len(output); i++ {
+		r, g, b := yellow(i)
+		fmt.Printf("\033[38;2;%d;%d;%dm%c\033[0m", r, g, b, output[i])
+	}
+
+
 	fmt.Println()
 }
 
