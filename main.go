@@ -16,6 +16,27 @@ func rbg(i int) (int, int, int) {
 		int(math.Sin(f*float64(i)+4*math.Pi/3)*127 + 128)
 }
 
+func rainbow(i int)(int,int,int){
+	switch i%3{
+	case 0:
+		return 255,0,0 
+	case 1:
+		return 0,255,0
+	default:
+		return 0,0,255
+
+
+	}}
+
+func yellow(i int)(int,int,int){
+	if(i==0){
+	return 255,255,0
+}
+return 255,0,0
+}
+
+
+
 func color_printer(output []rune) {
 	for i := 0; i < len(output); i++ {
 		r, g, b := rbg(i)
@@ -23,6 +44,8 @@ func color_printer(output []rune) {
 	}
 	fmt.Println()
 }
+
+
 
 func main() {
 	var output []rune
